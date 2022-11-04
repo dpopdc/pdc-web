@@ -252,7 +252,7 @@ class App extends Component {
           )}
         />
         <Route
-          path="/password/recover"
+          path="/recover"
           exact
           render={(props) => (
             <RecoverPassword
@@ -285,12 +285,12 @@ class App extends Component {
           <Backdrop onClick={this.backdropClickHandler} />
         )}
         <ErrorHandler error={this.state.error} onHandle={this.errorHandler} />
-        {(this.state.info && !window.location.href.includes('password/recover')) && (
+        {(this.state.info && !window.location.href.includes('/recover')) && (
           <InfoBanner
             design="info"
             title="Informação"
-            message="Por favor, queira repor a sua palavra chave, de momento já dispomos dessa opção, para tal basta clicar aqui:"
-            link={`${projectSettings.APP_URL}/password/recover`}
+            message="Por favor, queira repor a sua palavra chave, de momento já dispomos dessa opção, ainda que não seja na sua àrea pessoal. Para tal basta clicar aqui abaixo, introduzir o seu email e nova password."
+            link={`${projectSettings.APP_URL}/recover`}
             onHandle={this.infoHandler}
           />
         )}
