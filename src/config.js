@@ -1,3 +1,3 @@
 exports.projectSettings = {
-    'API_URL': 'http://localhost:8081'
+    'API_URL': 'https://pdc-api.vercel.app'
 }
