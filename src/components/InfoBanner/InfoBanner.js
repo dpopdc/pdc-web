@@ -36,13 +36,15 @@ const InfoBanner = (props) => {
         <div style={{ padding: ".4rem 0" }}>
           <p className="message__details">{props.message}</p>
         </div>
-        <a
-          href={`${props.link}`}
-          className="message__details"
-          onClick={handleLinkClick}
-        >
-          repor password
-        </a>
+        {(props.link !== "" && props.link != null) && (
+          <a
+            href={`${props.link}`}
+            className="message__details"
+            onClick={handleLinkClick}
+          >
+            repor password
+          </a>
+        )}
       </div>
       <div className="info__actions">
         <i>
