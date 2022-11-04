@@ -20,8 +20,15 @@
 }
 
 .message__title {
-    color: #EB8B9E;
     padding: 0.2rem 0;
+}
+
+.error {
+    color: #EB8B9E;
+}
+
+.info {
+    color: rgb(36, 126, 36);
 }
 
 .message__details {
@@ -31,4 +38,9 @@
 .error {
     background-color: #FDEDEE;
     border: .2rem solid #EB8B9E;
+}
+
+.info {
+    background-color: rgba(140, 210, 140, 0.631);
+    border: .2rem solid rgb(36, 126, 36);
 }
