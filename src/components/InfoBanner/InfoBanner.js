@@ -33,7 +33,9 @@ const InfoBanner = (props) => {
           <MdError />
           {props.title}
         </label>
-        <p className="message__details">{props.message}</p>
+        <div style={{ padding: ".4rem 0" }}>
+          <p className="message__details">{props.message}</p>
+        </div>
         <a
           href={`${props.link}`}
           className="message__details"
