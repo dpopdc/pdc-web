@@ -1,0 +1,61 @@
+.input {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.input__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input__header--description {
+  font-size: .8rem;
+  color: grey;
+}
+
+.input label {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: #7D7D7D;
+}
+
+.input input,
+.input select,
+.input textarea {
+  /*  POSITION AND SIZE */
+  display: block;
+  width: 100%;
+  padding: 0.6rem;
+
+  /* FONTS AND COLOR */
+  background: #F6F6FA;
+  color: #0E3860;
+  font: inherit;
+  font-weight: bold;
+
+  /* OTHERS */
+  border: 0.1rem solid #F6F6FA;
+  border-radius: 3px;
+}
+
+.input .touched.invalid {
+    border-color: #EB8B9E;
+    background: #FDEDEE;
+}
+
+.input input:focus,
+.input textarea:focus {
+  outline: none;
+}
+
+.pwd__container {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.pwd__container button {
+  background: none;
+  border: none;
+}

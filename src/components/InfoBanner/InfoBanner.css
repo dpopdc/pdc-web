@@ -1,0 +1,34 @@
+.info__container {
+    position: fixed;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 98%;
+    height: auto;
+    background: #f8f6ff;
+    padding: 1rem;
+    margin: 1rem;
+    
+    border-radius: 0.4rem;
+    border: .2rem solid #9894c7;
+}
+
+.hide_container {
+    visibility: hidden;
+}
+
+.message__title {
+    color: #EB8B9E;
+    padding: 0.2rem 0;
+}
+
+.message__details {
+    margin: 0;
+}
+
+.error {
+    background-color: #FDEDEE;
+    border: .2rem solid #EB8B9E;
+}

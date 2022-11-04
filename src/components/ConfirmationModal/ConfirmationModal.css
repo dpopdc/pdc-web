@@ -1,0 +1,63 @@
+.modal {
+  position: fixed;
+  width: 90%;
+  left: 5%;
+  top: calc(100vh - 70vh);
+  background: white;
+  z-index: 2200;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+.danger {
+  border: .2rem solid #EB8B9E;
+}
+
+.danger header {
+  background-color: #FDEDEE;
+  border-bottom: none;
+}
+
+.danger > .modal__header h1 {
+  color: #EB8B9E;
+}
+
+
+.modal__header {
+  border-bottom: 2px solid #B8BCC2;
+  border-bottom-width: 90%;
+}
+
+.modal__header h1 {
+  font-size: 1.5rem;
+  color: #000;
+  margin: 0;
+  padding: 1rem;
+}
+
+.modal__content {
+  padding: 1rem;
+}
+
+.modal__actions {
+  padding: 1rem;
+  text-align: right;
+}
+
+.modal__actions button {
+  margin: 0 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    width: 32rem;
+    left: calc((100% - 32rem) / 2);
+  }
+}
+
+.unselectable {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

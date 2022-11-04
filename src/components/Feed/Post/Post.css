@@ -1,0 +1,138 @@
+.post {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  border-radius: .4rem;
+
+  padding: 1rem;
+  max-width: 100%;
+  margin: 1rem 6rem;
+  background: #fff;
+}
+
+.post__meta {
+  font-size: 1rem;
+  color: #707070;
+  margin: 0;
+}
+
+.puppil__data {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+.puppil__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  min-width: 8rem;
+}
+
+.puppil__info span {
+  font-size: .6rem;
+  margin-bottom: .2rem;
+  color: #707070;
+  text-transform: uppercase;
+}
+
+.puppil__info p {
+  margin: 0;
+}
+
+.puppil__info--date {
+  width: 14rem;
+}
+
+.puppil__avatar {
+  display: inline-block;
+  vertical-align: middle;
+
+  position: relative;
+  background-color: #F8F6FF;
+  color: #9894C7;
+
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+}
+
+.puppil__letter {
+  /* Center the content */
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pupil__name {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: #3b0062;
+}
+
+.puppils__status {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding: 0.4rem 0.6rem;
+  border-radius: 2rem;
+  font-size: .8rem;
+}
+
+.status__canceled {
+  background-color: #FDEDEE;
+  color: #EB8B9E;
+  border: 0.1rem solid #EB8B9E;
+}
+
+.status__renewed {
+  background-color: #EBF8F1;
+  color: #87CCA7;
+  border: 0.1rem solid #87CCA7;
+}
+
+.status__pending {
+  background-color: #FDE9C3;
+  color: #FBCC74;
+  border: 0.1rem solid #FBCC74;
+}
+
+.post__image {
+  height: 15rem;
+  width: 100%;
+}
+
+.post__actions {
+  width: 12vw;
+  height: 6vh;
+  border-left: 0.1rem solid #70707026;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.post__actions a {
+  color: #707070;
+  cursor: pointer;
+}
+
+.post__actions a:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .post {
+    padding: 1rem;
+  }
+}
