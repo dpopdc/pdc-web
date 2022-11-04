@@ -222,7 +222,7 @@ class App extends Component {
   };
 
   infoHandler = () => {
-    console.log(this.state.info)
+    console.log(this.state.info);
     this.setState({ info: !this.state.info });
   };
 
@@ -285,11 +285,11 @@ class App extends Component {
           <Backdrop onClick={this.backdropClickHandler} />
         )}
         <ErrorHandler error={this.state.error} onHandle={this.errorHandler} />
-        {(this.state.info && !window.location.href.includes('/recover')) && (
+        {this.state.info && !window.location.href.includes("/recover") && (
           <InfoBanner
             design="info"
             title="Informação"
-            message="Por favor, queira repor a sua palavra chave, de momento já dispomos dessa opção, ainda que não seja na sua àrea pessoal. Para tal basta clicar aqui abaixo, introduzir o seu email e nova password."
+            message="Todas as password foram repostas, por medidas de segurança. Pedimos que cada um faça a reposição da sua password através do link abaixo. Obrigado"
             link={`${projectSettings.APP_URL}/recover`}
             onHandle={this.infoHandler}
           />
